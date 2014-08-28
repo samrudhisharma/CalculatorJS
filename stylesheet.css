@@ -1,0 +1,238 @@
+  /*
+*******************
+Basic Reset
+*******************
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+	border:0;
+	outline: 0;
+	box-sizing: border-box;
+
+}
+
+body
+{
+	background-color: #fcfcfc;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #777;
+}
+/*
+*******************
+
+*******************
+*/
+#calculator
+{
+	width:325px;
+	height: auto;
+	margin: 150px auto;
+	padding: 20px 20px 9px;
+	background: linear-gradient(rgba(225,225,225,0.5), rgba(230,230,230,0.5));
+	border-radius: 3px;
+	box-shadow: 0px 3px 1px #D9D9D9,0px 6px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/*
+*******************
+
+*******************
+*/
+.keys
+{
+	overflow: hidden;
+}
+.keys input
+{
+	float: left;
+	width: 66px;
+	height: 40px;
+    background: white;
+	border-radius: 3px;
+	margin: 0 7px 11px 0;
+	line-height: 40px;
+	text-align: center;
+	box-shadow: 0px 2px 0px #E0E0E0;
+	cursor: pointer;
+    position: relative;
+    top: 0px;
+    /* prevent selection of text inside keys */	
+	user-select: none;
+
+	/*
+	*******************
+	The user-select property text unselectable.
+	*******************
+	*/
+
+
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.2s ease;
+
+	/*
+	*******************
+	The transition property in CSS allows you specify how any particular property changes values. For instance, perhaps the background of a div changes background-color on :hover -
+
+	div {
+  	transition: background-color 0.5s ease;
+  	background-color: red;
+	}
+	div:hover {
+  	background-color: green;
+	}
+	That div will take half a second when the mouse is over it to turn from red to green\
+    You can specify a particular property as we have above, or us "all" to refer to all properties.
+	*******************
+	*/
+}
+
+/*
+***************************************
+
+Remove right margins from operator keys
+
+***************************************
+*/
+input.operators
+{
+margin-right: 0;
+}
+
+
+/*
+**********************
+
+Styling Output Screen
+
+**********************
+*/
+input.screen
+{
+	height: 55px;
+	width: 285px;
+	min-width: 285px;
+	background-color: #fefefe;
+	border-radius: 1px;
+	margin-bottom: 11px;
+	box-shadow: inset 0px 3px 2px #E0E0E0;
+	padding: 2px 6px 0px 6px;
+	/*Typography*/
+	font-size: 32px;
+	line-height: 55px;
+	color: #777;
+	text-shadow: 1px 1px 1px rgba(107,107,107,.2);
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+
+/*
+*******************
+Styling c, 
+*******************
+*/
+input.operators , input.pinkTint
+{
+	font-size: 18px;
+	background: #FFFCFD;
+	box-shadow: 0px 3px #F5E9EF;
+}
+ input.clear
+{
+	background-color: #ff9fa8;
+	box-shadow: 0px 3px #E8959C;
+	color: white;
+	font-size: 23px;
+}
+
+input.evaluate
+{
+		background: #f1ff92;
+	box-shadow: 0px 3px #DCF531;
+	color: #888e5f;
+	font-weight: bold;
+	padding: 1px;
+	font-size: 21px;
+}
+input.mult
+{
+	padding: 4px;
+}
+
+/*
+*******************
+Hover effects
+*******************
+*/
+.keys input:hover
+{
+	background-color: #fdfbfb;
+}
+input.operators:hover , input.pinkTint:hover
+{
+	font-size: 18px;
+	background: #fff6f9;
+	box-shadow: 0px 3px #F5E9EF;
+}
+ input.clear:hover
+{
+	background-color: #fe98a2;
+	box-shadow: 0px 3px #E8959C;
+	color: white;
+	font-size: 23px;
+}
+
+input.evaluate:hover
+{
+		background: #eeff7c;
+	box-shadow: 0px 3px #DCF531;
+	color: #888e5f;
+	font-weight: bold;
+	padding: 1px;
+	font-size: 21px;
+}
+/* Simulating "pressed" effect on 
+active state of the keys by
+ removing the box-shadow and m
+ oving the keys down a bit */
+ .keys input:active
+{
+	box-shadow: 0px 0px #fff;
+	top:3px;
+}
+input.operators:active , input.pinkTint:active
+{
+	font-size: 18px;
+	background: #fff6f9;
+	box-shadow: 0px 0px #fff;
+	top:3px;
+}
+ input.clear:active
+{
+	background-color: #fe98a2;
+	box-shadow: 0px 0px #fff;
+	top:3px;
+	color: white;
+	font-size: 23px;
+}
+
+input.evaluate:active
+{
+		background: #eeff7c;
+	box-shadow: 0px 0px #fff;
+	top:3px;
+	color: #888e5f;
+	font-weight: bold;
+	padding: 1px;
+	font-size: 21px;
+}
+
+
+
+
+
