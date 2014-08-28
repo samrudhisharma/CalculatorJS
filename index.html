@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+
+</head>
+<body>
+	<div id="calculator">
+		
+        
+		
+
+		<form class="keys" name="keys">
+          <input class="screen" name ="screen" maxlength="10" placeholder="0" value=""> 
+          <input class="raisedTo pinkTint" type="button" value=" +/- " onclick = "operation('!')">            
+	     <input class="sqroot pinkTint" type="button" value=" &#8730 " onclick = "operation('@')">
+	     <input class=" pinkTint" type="button" value=" % " onclick = "operation('%')">
+	     <input class="operators clear" type="button" value=" c " onclick = "reset()">
+         <input type="button" value=" 7 " onclick ="displaynum(7)">
+         <input type="button" value=" 8 " onclick ="displaynum(8)">
+         <input type="button" value=" 9 " onclick ="displaynum(9)">
+          <input type="button" value=" / " class="operators" onclick ="operation('/')">
+         <input type="button" value=" 4 " onclick ="displaynum(4)">
+         <input type="button" value=" 5 " onclick ="displaynum(5)">
+         <input type="button" value=" 6 " onclick ="displaynum(6)">
+         <input type="button" value=" * " class="operators mult" onclick ="operation('*')">
+         <input type="button" value=" 1 "onclick = "displaynum(1)">
+         <input type="button" value=" 2 "onclick = "displaynum(2)">
+         <input type="button" value=" 3 "onclick = "displaynum(3)">
+         <input type="button" value=" - "class="operators" onclick = "operation('-')">
+         <input type="button" value=" 0 " onclick = "displaynum(0)">
+         <input type="button" value=" . " onclick = "operation('.')">
+		<input type="button" value=" = " class="evaluate" onclick = "operation('=')">
+         <input type="button" value=" + " class="operators" onclick = "operation('+')">
+       	</form>
+	</div>
+	<script>
+
+	</script>
+</body>
+</html>
